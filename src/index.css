@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+
+}
+
+@layer components {
+
+  .walletModal {
+    position: fixed;
+    inset: 0;
+    transition: opacity .15s linear;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    overflow-y: auto;
+  }
+
+  .walletModalContainer {
+
+    display: flex;
+    margin: 3rem;
+    min-height: calc(100vh-6rem);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .walletModalWrapper {
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9999;
+    max-width: 400px;
+    box-shadow: 0 8px rgb(0 0 0 / 60%);
+    font-weight: 600;
+    flex: 1 1;
+    background: rgba(169, 145, 174, 1);
+    overflow: hidden;
+    border-radius: 8px;
+  }
+
+  .gradient-bg {
+    background: linear-gradient(90deg, #4b1d54, #b133cf);
+  }
+
+  .walletModalLists {
+    margin: 0 0 8px;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+  }
+
+  .walletModalListBtn {
+    padding: 0px 20px;
+    background-color: rgba(75, 29, 84, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 600;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+    color: white;
+    border-radius: 8px;
+    width: 100%;
+  }
+
+  .walletModalListBtnIcon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+}
